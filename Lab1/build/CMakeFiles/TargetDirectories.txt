@@ -1,0 +1,3 @@
+/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/build/CMakeFiles/pi.dir
+/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/build/CMakeFiles/edit_cache.dir
+/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/build/CMakeFiles/rebuild_cache.dir

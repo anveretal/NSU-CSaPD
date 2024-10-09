@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/build",
+  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/pi.dir/main.c.o -c \"/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/main.c\"",
+  "file": "/Users/anvea/Documents/NSU/Subjects/Computers & Peripheral Devices/CS&PD lab1/main.c",
+  "output": "CMakeFiles/pi.dir/main.c.o"
+}
+]
