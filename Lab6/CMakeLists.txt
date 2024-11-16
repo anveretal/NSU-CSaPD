@@ -1,17 +1,24 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(Lab6)
+# Укажите имя проекта
+project(USBDeviceList)
 
-# Используем pkg-config для поиска libusb
+# Установите стандарт C++
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+# Укажите исполняемый файл
+add_executable(exe Main.cpp)
+
+# Подключите библиотеку libusb-1.0
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBUSB REQUIRED libusb-1.0)
 
-# Указываем пути для include и link
-include_directories(${LIBUSB_INCLUDE_DIRS})
-link_directories(${LIBUSB_LIBRARY_DIRS})
+# Установите пути вручную, если необходимо
+link_directories(/opt/homebrew/lib)
+include_directories(/opt/homebrew/include)
 
-# Добавляем исполняемый файл
-add_executable(my_program main.cpp)
-
-# Линкуем с libusb
-target_link_libraries(my_program ${LIBUSB_LIBRARIES})
+# Добавьте библиотеки
+target_include_directories(exe PRIVATE ${LIBUSB_INCLUDE_DIRS})
+target_link_libraries(exe PRIVATE /opt/homebrew/lib/libusb-1.0.dylib)
