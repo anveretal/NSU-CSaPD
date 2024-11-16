@@ -1,4 +1,4 @@
-CMakeFiles/exe.dir/Main.cpp.o: \
+CMakeFiles/Lab6.dir/Main.cpp.o: \
   /Users/anvea/Documents/NSU/CSaPD/Lab6/Main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__assert \

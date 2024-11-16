@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/anvea/Documents/NSU/CSaPD/Lab6/build",
-  "command": "/usr/bin/clang++  -I/opt/homebrew/include -I/opt/homebrew/Cellar/libusb/1.0.27/include/libusb-1.0 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/exe.dir/Main.cpp.o -c /Users/anvea/Documents/NSU/CSaPD/Lab6/Main.cpp",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -I/opt/homebrew/Cellar/libusb/1.0.27/include/libusb-1.0 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Lab6.dir/Main.cpp.o -c /Users/anvea/Documents/NSU/CSaPD/Lab6/Main.cpp",
   "file": "/Users/anvea/Documents/NSU/CSaPD/Lab6/Main.cpp",
-  "output": "CMakeFiles/exe.dir/Main.cpp.o"
+  "output": "CMakeFiles/Lab6.dir/Main.cpp.o"
 }
 ]

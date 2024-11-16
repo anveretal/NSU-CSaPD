@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exe
+# Target rules for targets named Lab6
 
 # Build rule for target.
-exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exe
-.PHONY : exe
+Lab6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lab6
+.PHONY : Lab6
 
 # fast build rule for target.
-exe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/build
-.PHONY : exe/fast
+Lab6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab6.dir/build.make CMakeFiles/Lab6.dir/build
+.PHONY : Lab6/fast
 
 Main.o: Main.cpp.o
 .PHONY : Main.o
 
 # target to build an object file
 Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab6.dir/build.make CMakeFiles/Lab6.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -142,7 +142,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab6.dir/build.make CMakeFiles/Lab6.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -150,7 +150,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exe.dir/build.make CMakeFiles/exe.dir/Main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab6.dir/build.make CMakeFiles/Lab6.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... exe"
+	@echo "... Lab6"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
