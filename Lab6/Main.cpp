@@ -38,7 +38,28 @@ void printdev(libusb_device *dev) {
             }
         }
     }
-    cout << desc.iSerialNumber << endl;
+
+    // Открытие устройства для получения серийного номера
+    libusb_device_handle *handle;
+    r = libusb_open(dev, &handle);
+    if (r < 0) {
+        fprintf(stderr, "Ошибка: не удалось открыть устройство, код: %d.\n", r);
+        libusb_free_config_descriptor(config);
+        return;
+    }
+
+    // Получение серийного номера
+    if (desc.iSerialNumber) {
+        unsigned char serial_number[256];
+        r = libusb_get_string_descriptor_ascii(handle, desc.iSerialNumber, serial_number, sizeof(serial_number));
+        if (r < 0) {
+            fprintf(stderr, "Ошибка: не удалось получить серийный номер устройства, код: %d.\n", r);
+        } else {
+            printf("| | | | | | | | | | | %s\n", serial_number);
+        }
+    }
+
+    libusb_close(handle);
     libusb_free_config_descriptor(config);
 }
 
