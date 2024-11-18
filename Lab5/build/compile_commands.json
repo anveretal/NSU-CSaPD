@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/anvea/Documents/NSU/CSaPD/Lab5/build",
+  "command": "/usr/bin/clang++  -isystem /opt/homebrew/Cellar/opencv/4.10.0_12/include/opencv4 -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Lab5.dir/Main.cpp.o -c /Users/anvea/Documents/NSU/CSaPD/Lab5/Main.cpp",
+  "file": "/Users/anvea/Documents/NSU/CSaPD/Lab5/Main.cpp",
+  "output": "CMakeFiles/Lab5.dir/Main.cpp.o"
+}
+]
